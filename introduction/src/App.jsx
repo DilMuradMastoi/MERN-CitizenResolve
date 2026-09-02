@@ -76,7 +76,7 @@ function Layout() {
 
   return <div className="app">
     <aside className={`sidebar ${open ? "open" : ""}`}>
-      <div className="brand"><div className="brand-mark"><ShieldCheck size={20}/></div><span>CivicResolve</span></div>
+      <div className="brand"><div className="brand-mark"><ShieldCheck size={20}/></div><span>CitizenResolve</span></div>
       <nav>{nav.map(({to,label,icon:Icon}) => <NavItem key={to} to={to} label={label} icon={Icon} onClick={()=>setOpen(false)} />)}</nav>
       <div className="sidebar-bottom">
         <div className="mini-user"><div className="avatar">{user?.name?.[0]?.toUpperCase()}</div><div><b>{user?.name}</b><small>{user?.role}</small></div></div>
@@ -148,7 +148,7 @@ function AuthCard({ mode }) {
 
   return <div className="auth-page">
     <div className="auth-visual">
-      <div className="auth-copy"><div className="brand light"><div className="brand-mark"><ShieldCheck size={20}/></div><span>CivicResolve</span></div>
+      <div className="auth-copy"><div className="brand light"><div className="brand-mark"><ShieldCheck size={20}/></div><span>CitizenResolve</span></div>
       <div className="hero-orb"><Sparkles size={42}/></div>
       <h1>Make your community<br/><span>better, one report at a time.</span></h1>
       <p>A simple, transparent place to report civic issues and follow their progress.</p></div>
@@ -179,7 +179,7 @@ function HomePage() {
   const { user } = useAuth();
   return <div>
     <section className="hero">
-      <div><div className="eyebrow">CIVIC SERVICE PORTAL</div><h1>Turn local problems into <span>visible progress.</span></h1><p>Report, track, and resolve community issues with a transparent complaint workflow.</p>
+      <div><div className="eyebrow">CITIZEN SERVICE PORTAL</div><h1>Turn local problems into <span>visible progress.</span></h1><p>Report, track, and resolve community issues with a transparent complaint workflow.</p>
       <div className="hero-actions"><Link className="btn primary" to="/complaints/new"><Plus size={18}/> Submit a complaint</Link><Link className="btn secondary" to="/complaints"><ClipboardList size={18}/> Explore complaints</Link></div></div>
       <div className="hero-card"><div className="hero-card-top"><span>LIVE WORKFLOW</span><Sparkles size={17}/></div><div className="progress-line"><i></i><i></i><i></i></div><div className="workflow"><div><b>Reported</b><small>Community</small></div><div><b>In review</b><small>Officer</small></div><div><b>Resolved</b><small>Verified</small></div></div></div>
     </section>

@@ -1,4 +1,4 @@
-# CivicResolve Frontend
+# CitizenResolve Frontend
 
 React + Vite frontend for the Express/MongoDB complaint API supplied with this project.
 
